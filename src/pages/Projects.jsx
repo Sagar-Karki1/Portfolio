@@ -1,6 +1,6 @@
 import React from "react";
 import Food from "../assets/food-project.jpg";
-import Weather from "../assets/weather-project.png";
+import Portfolio from "../assets/weather-project.png";
 import Ecommerce from "../assets/ecommerce-project.jpg";
 
 const Projects = () => {
@@ -8,32 +8,20 @@ const Projects = () => {
     {
       id: 1,
       src: Food,
+      url: "https://github.com/Sagar-Karki1/food-website",
       AppName: "Food App",
     },
     {
       id: 2,
-      src: Weather,
-      AppName: "Weather App",
+      url: "https://github.com/Sagar-Karki1/Portfolio",
+      src: Portfolio,
+      AppName: "Personal Portfolio",
     },
     {
       id: 3,
+      url: "https://github.com/Sagar-Karki1/MeroPasal-ecommerce",
       src: Ecommerce,
-      AppName: "Ecommerce App",
-    },
-    {
-      id: 4,
-      src: Food,
-      AppName: "Food App",
-    },
-    {
-      id: 5,
-      src: Weather,
-      AppName: "Weather App",
-    },
-    {
-      id: 6,
-      src: Ecommerce,
-      AppName: "Ecommerce App",
+      AppName: "MeroPasal - Ecommerce App",
     },
   ];
   return (
@@ -49,7 +37,7 @@ const Projects = () => {
             </h3>
           </div>
           <div className="image-wrapper w-full grid sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-14">
-            {projects.map(({ id, src, AppName }) => (
+            {projects.map(({ id, url, src, AppName }) => (
               <div
                 key={id}
                 className="img-div w-full h-[260px] md:w-[290px] md:h-[300px] duration-200 md:hover:scale-105 shadow-md shadow-gray-600 rounded-md"
@@ -60,13 +48,13 @@ const Projects = () => {
                   className="w-full h-[70%] object-cover   rounded-tl-md rounded-tr-md  md:opacity-60  md:hover:opacity-100"
                 />
                 <div className="project-name px-2 h-[15%]">
-                  <h3 className="text-md xs:text-xl font-medium px-1 py-1">
+                  <h3 className="text-md xs:text-xl font-medium px-1 py-1 overflow-hidden text-ellipsis whitespace-nowrap">
                     {AppName}
                   </h3>
                 </div>
                 <div className="links-wrapper   flex justify-between px-2">
                   <a
-                    href="/"
+                    href={url}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[10px] xs:text-xs px-2 py-1 border-2 rounded-md  hover:bg-white hover:text-gray-700 hover:font-medium"
