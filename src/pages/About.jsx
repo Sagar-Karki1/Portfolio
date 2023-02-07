@@ -15,19 +15,15 @@ const About = () => {
           </div>
           <div className="about-paragraph text-gray-500">
             <p className="mt-18 text-xl text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              quidem qui velit quasi nam illo consequatur debitis ea porro cum
-              nemo quae, in ducimus cupiditate laudantium ipsa atque molestiae
-              eius provident error pariatur sunt modi aliquid fuga. Accusamus,
-              sint iure?
-            </p>
-            <br />
-            <p className="text-xl mt-10 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis rem quis ea eius quisquam quae perspiciatis nulla magni
-              velit, cum distinctio recusandae, libero beatae deleniti dolore
-              nobis. Voluptate similique, quae accusantium saepe vitae
-              quibusdam, nobis mollitia debitis eum, id natus.
+              Hi, I am Sagar Karki currently living in Jhapa, Nepal. I am a Jr.
+              Frontend Developer. I have recently completed my bachelor in
+              Computer Science and Information Technology (BSc. CSIT) from
+              Birendra Memorial College, Dharan. As a fresher graduate,
+              currently I don't have any experience working in the related
+              field.
+              <br />
+              My Interests are in Frontend develpoment, turning the beautiful
+              designs in the form of code understand by the browser.
             </p>
           </div>
         </div>
